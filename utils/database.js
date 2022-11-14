@@ -1,10 +1,12 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("purple_pay", "paruljuniwal", "", {
-  host: "localhost",
-  dialect:
-    "postgres" /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */,
-});
+// const sequelize = new Sequelize("purple_pay", "paruljuniwal", "", {
+//   host: "localhost",
+//   dialect:
+//     "postgres" /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */,
+// });
+
+const sequelize = new Sequelize('postgresql://postgres:ngs3yZtg5g2zGZINRA7H@containers-us-west-126.railway.app:8002/railway')
 
 module.exports = sequelize;
 
