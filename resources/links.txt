@@ -1,0 +1,13 @@
+Postgres Installation: https://gist.github.com/phortuin/2fe698b6c741fd84357cec84219c6667
+
+Check status of running postgres server: https://stackoverflow.com/questions/7975414/how-to-check-status-of-postgresql-server-mac-os-x
+
+https://stackoverflow.com/questions/44762526/pg-ctl-no-database-directory-specified-and-environment-variable-pgdata-unset
+
+Postgres Location of database - /opt/homebrew/var/postgres
+
+Upgrade Postgres database from 13 to 14 - https://dba.stackexchange.com/questions/75214/postgresql-not-running-on-mac
+https://stackoverflow.com/questions/69424563/data-directory-was-initialized-by-postgresql-version-13-which-is-not-compatible
+
+https://dev.to/nedsoft/add-new-fields-to-existing-sequelize-migration-3527
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/checkout">Checkout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <% if (message) { %>
+        <div><%= message %></div>
+        <% } %>
+      <form action="/sign_up" method="POST">
+        <ul id="fieldList">
+          <li>
+            <input name="email" type="text" placeholder="Email" />
+          </li>
+          <li>
+            <input name="phoneNumber" type="text" placeholder="Phone Number" />
+          </li>
+
+          <li>
+            <input name="password" type="text" placeholder="Password" />
+          </li>
+          <li>
+            <input
+              name="confirmPassword"
+              type="text"
+              placeholder="Confirm Password"
+            />
+          </li>
+        </ul>
+
+        <input name="_csrf" type="hidden" value="<%= csrfToken %>" >
+        <button type="submit">Sign Up</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+<!-- <form action="form_sent.php" method="post">
+    
+    <button id="addMore">Add more fields</button>
+    <br>
+    <br>
+    <input type="submit">
+  </form> -->
+
+<!-- id: string;
+//     merchant_id: string; // TODO: check if something better can be used here
+//     order_id: string;
+//     amount_value: number; // Amount always in $ or MATIC
+//     pricing: Record<string, Token>;
+//     expires_at: string; // ISO date string
+//     created_at: string; -->
